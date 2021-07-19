@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".main.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:background="@drawable/num_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/number_guess"
+        android:layout_below="@+id/logo"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:id="@+id/title"
+        />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/play"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_stroke"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"
+        />
+
+    <Button
+        android:id="@+id/score"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/score_board"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_stroke"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/start"
+        />
+
+
+    <Button
+        android:id="@+id/instruction"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/instruction"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_stroke"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/score"
+        />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/exit_app"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_stroke"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/instruction"
+        />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_background"
+        android:layout_height="match_parent"
+android:visibility="invisible"
+        >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:text="@string/loading"
+           android:textSize="40sp"
+           android:textStyle="bold"
+           android:textColor="#E91E63" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
